@@ -9,12 +9,12 @@ pipeline {
 
 		stage('Image') {
 		    steps {
-		        echo "1. Image 阶段 !!"
+		        echo "1. Image 阶段!!!!"
 
 		        sh 'docker build -f Dockerfile -t cloud-register:1.0.0 .'
 		    }
 		}
-		
+
         stage('Startup') {
             steps {
                 echo "2. StartUp 阶段 !!!!232323ssss!"
