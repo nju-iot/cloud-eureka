@@ -8,7 +8,7 @@ pipeline {
 		        echo "1. Image 阶段 !!"
 		        pom = readMavenPom file: 'pom.xml'
 		        img-name = "${pom.groupId}-${pom.artifactId}"
-		        echo "img-name : ${img-name}"
+		        echo "${img-name}"
 		        sh 'docker build -f Dockerfile -t cloud-register:1.0.0'
 		    }
 		}
