@@ -17,9 +17,8 @@ pipeline {
 
         stage('Startup') {
             steps {
-                echo "2. StartUp 阶段 !!!!232323ssss!"
+                echo "2. StartUp 阶段 !!!!"
                 withEnv(['JENKINS_NODE_COOKIE=dontkillme']){
-
                   sh 'docker run -d --name={JOB_NAME} -p 8080:8080 cloud-register:1.0.0.{BUILD_ID}'
 		        }
             }
