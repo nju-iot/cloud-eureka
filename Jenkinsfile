@@ -1,8 +1,8 @@
 pipeline {
     agent any
-    environment{
-        imageName=‘cloud-register‘
-        jobName=’cloud-register‘
+    environment {
+        imageName = 'cloud-register'
+        jobName = 'cloud-register'
     }
     stages {
         stage('mvn'){
